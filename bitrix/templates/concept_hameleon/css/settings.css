@@ -1,0 +1,2130 @@
+div.hameleon-setting ul.edit-style li label{
+    display: inline-block;
+}
+div.hameleon-setting ul.edit-style li a{
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/setting/sprite-set.png) no-repeat;
+    display: inline-block;
+    margin-bottom: -8px;
+    cursor: pointer;
+}
+div.hameleon-setting ul.edit-style li a:hover{
+    background-position: top right;
+}
+
+div.hameleon-main-setting{
+    position: fixed;
+    will-change: transform;
+    top: 50%;
+    margin-top: -20px;
+    right: 20px;
+    z-index: 998;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: auto;
+    -webkit-transition: right .3s;
+    -o-transition: right .3s;
+    transition: right .3s;
+}
+div.hameleon-main-setting.off{
+    right: -100px;
+}
+div.hameleon-main-setting.off.hide{
+    display: none;
+}
+div.hameleon-main-setting div.hameleon-btn{
+    position: relative;
+    z-index: 5;
+    width: 41px;
+    height: 41px;
+    background: url('../images/setting/set.gif') center no-repeat;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+div.hameleon-main-setting span{
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #959797;
+    position: absolute;
+    width: 200px;
+    display: block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    padding: 5px 0 5px 12px;
+    right: -180px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+div.hameleon-main-setting:hover span{
+    top: 6px;
+    right: calc(100% - 20px);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+}
+div.hameleon-setting div.inner div.setting-content div.content-body div.name .tooltip-inner{
+    max-width: 300px;
+}
+
+.hameleon-color-row{
+    margin: 11px -5px 0;
+}
+.hameleon-color-col{
+    padding: 0 3px;
+    margin-bottom: 3px;
+    float: left;
+}
+.hameleon-color-col>label{
+    width: 100%;
+    margin: 0;
+}
+.hameleon-color-col>label input[type="radio"]{
+    position: absolute;
+    left: -10000px;
+}
+.hameleon-color-col>label input[type="radio"]+span{
+    display: block;
+    width: 68px;
+    height: 68px;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+.hameleon-color-col>label input[type="radio"]:checked+span{
+    background-position: center;
+    border: 3px solid #fff;
+}
+.hameleon-color-col>label input[type="radio"]+span>span{
+    display: block;
+    height: 100%;
+    background-image: url("../images/ic_point_color.png");
+    background-position: -100px;
+    background-repeat: no-repeat;
+}
+.hameleon-color-col>label input[type="radio"]:checked+span>span{
+    background-position: center;
+}
+div.hameleon-setting{
+    overflow-y: auto;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    z-index: 9999;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    transition: .9s;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -o-transition: .9s;
+    display: none;
+    font-family: 'Lato';
+}
+div.hameleon-setting .bold{
+    font-family: 'LatoBold';
+}
+div.hameleon-setting.open{
+    display: block;
+    position: fixed;
+}
+div.hameleon-setting.open.on{
+    right: 0;
+}
+div.hameleon-setting form.form{
+    padding: 0;
+    margin: 0;
+}
+div.hameleon-setting div.inner{
+    position: relative;
+    width: 850px;
+}
+div.hameleon-setting div.inner div.hameleon-set-head{
+    background: url('../images/setting/set-head.jpg') left top no-repeat;
+    position: relative;
+    background-size: cover;
+    padding: 15px 21px;
+}
+div.hameleon-setting.newpage div.inner div.hameleon-set-head{
+    padding: 15px 34px;
+}
+div.hameleon-setting div.inner div.hameleon-set-head table{
+    width: 100%;
+    min-height: 70px;
+}
+div.hameleon-setting div.inner div.hameleon-set-head table td.hameleon-set-image div{
+    width: 70px;
+    height: 70px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-head table td.hameleon-set-image div{
+    background: url('../images/setting/page-img.png') left center no-repeat;
+}
+div.hameleon-setting.edit-sets div.inner div.hameleon-set-head table td.hameleon-set-image div{
+    background: url('../images/setting/edit-img.png') left center no-repeat;
+}
+div.hameleon-setting.seo div.inner div.hameleon-set-head table td.hameleon-set-image div{
+    background: url('../images/setting/seo-img.png') left center no-repeat;
+}
+div.hameleon-setting.forms div.inner div.hameleon-set-head table td.hameleon-set-image div{
+    background: url('../images/setting/form-edit-img.png') left center no-repeat;
+}
+div.hameleon-setting.modals div.inner div.hameleon-set-head table td.hameleon-set-image div{
+    background: url('../images/setting/modal-edit-img.png') left center no-repeat;
+}
+div.hameleon-setting div.inner div.hameleon-set-head table td.hameleon-set-name{
+    text-align: center;
+    font-size: 31px;
+    line-height: 35px;
+    color: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-head table td.hameleon-set-close{}
+div.hameleon-setting div.inner div.hameleon-set-head a.hameleon-set-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    display: block;
+    z-index: 10;
+    background: url(../images/setting/close.png) center no-repeat;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    -moz-opacity: .7;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.title-hint{
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content{
+    padding: 50px;
+    background: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.addrow{
+    cursor: pointer;
+    display: inline-block;
+    color: #aaa;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.addrow span{
+    border-bottom: 1px dashed #aaa;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.addrow span:hover{
+    border-bottom-color: transparent;
+}
+div.hameleon-setting div.inner div.hameleon-set-content table.sides{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+div.hameleon-setting div.inner div.hameleon-set-content table.sides td{
+    vertical-align: top;
+    padding-bottom: 120px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left{
+    width: 280px;
+    background-color: #f9f9f9;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left ul.set-tabs{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left ul.set-tabs li{
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px 35px 18px;
+    display: block;
+    white-space: nowrap;
+    color: #2b99df;
+    border-bottom: 1px solid #e6e4e4;
+    cursor: pointer;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left ul.set-tabs li:hover{
+    background-color: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left ul.set-tabs li.active{
+    background-color: #2b99df;
+    border-bottom-color: #2b99df;
+    color: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left div.other-li{
+    margin: 30px 35px 0;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left div.other-li a{
+    display: inline-block;
+    white-space: nowrap;
+    color: #7d7d7d;
+    cursor: pointer;
+    background: url('../images/setting/edit_admin.png') right center no-repeat;
+    padding: 0 20px 0 0;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-left div.other-li a:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-right{
+    width: 70%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #e7e7e7;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-right div.set-content{
+    position: absolute;
+    left: -99999px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    height: 0;
+    overflow: hidden;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-right div.set-content.active{
+    position: relative;
+    left: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    height: auto;
+    overflow: visible;
+}
+div.hameleon-setting div.section-title{
+    font-size: 13px;
+    line-height: 19px;
+    color: #939393;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+div.hameleon-setting div.input-wrap.border-alert{
+    padding: 20px;
+    border: 1px solid #b90000;
+}
+div.hameleon-setting div.input-wrap{
+    margin-bottom: 30px;
+}
+div.hameleon-setting div.input-wrap.big{
+    margin-bottom: 40px;
+}
+div.hameleon-setting div.input-wrap.middle{
+    margin-bottom: 10px;
+}
+div.hameleon-setting div.input-wrap.middle-sm{
+    margin-bottom: 20px;
+}
+div.hameleon-setting div.input-wrap.none{
+    margin-bottom: 0px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.name{
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 11px;
+    position: relative;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input{
+    height: 45px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input.to-right{
+    margin-right: -7px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input.to-left{
+    margin-left: -7px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content label.file{
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-image: url('../images/setting/ic-file.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-bottom: 0;
+    height: 45px;
+    background-color: #fff;
+    padding-right: 47px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content label.file span{
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+div.hameleon-setting div.inner div.hameleon-set-content label.file span.ex-file{
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 24px;
+    padding-right: 40px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content label.file span.ex-file-desc{
+    color: #a9a9a9;
+    max-width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding-right: 47px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+div.hameleon-setting div.inner div.hameleon-set-content label.file.focus-anim span.ex-file-desc{
+    font-size: 12px;
+    top: 6px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea{
+    margin-bottom: 25px;
+    position: relative;
+    height: 88px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.set-content div.textarea.middle{
+    height: 155px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.set-content div.textarea.big{
+    height: 350px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea textarea{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    height: 100%;
+    background-color: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea textarea:focus{
+    border: 0;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea.focus-anim{
+    position: relative;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea.focus-anim textarea{
+    background-color: transparent;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea.focus-anim div.bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea.focus-anim span.desc{
+    font-size: 16px;
+    line-height: 22px;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    color: #767676;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea.focus-anim.in-focus span.desc{
+    font-size: 12px;
+    line-height: 13px;
+    padding: 7px 11px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
+}
+
+div.hameleon-setting div.inner div.hameleon-set-content div.input span.desk{
+    font-size: 16px;
+    line-height: 17px;
+    position: absolute;
+    z-index: 4;
+    top: 15px;
+    left: 10px;
+    color: #a9a9a9;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input span.desk{
+    font-size: 12px;
+    line-height: 13px;
+    top: 8px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input select{
+    line-height: 16px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 15px 6px 0;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+    cursor: pointer;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.instruct{
+    margin-bottom: 25px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.instruct.mt{
+    margin-top: 15px;
+}
+div.hameleon-setting.seo div.inner div.hameleon-set-content div.instruct{
+    margin-left: 35px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.instruct a{
+    color: #7e7e7e;
+    padding: 6px 20px 6px 35px;
+    text-decoration: underline;
+    background: url('../images/setting/help.png') left 1px no-repeat;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.instruct a:hover{
+    text-decoration: none;
+}
+div.hameleon-setting ul.political{
+    padding: 0;
+    list-style: none;
+    margin-left: 15px;
+}
+div.hameleon-setting ul.political li div{
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    color: #999;
+}
+div.hameleon-setting ul.political li:first-child{}
+div.hameleon-setting ul.political li a{
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/setting/sprite-set.png) no-repeat;
+    display: inline-block;
+    margin-bottom: -8px;
+    cursor: pointer;
+}
+div.hameleon-setting ul.political li a:hover{
+    background-position: top right;
+}
+div.hameleon-setting div.spec-comment{
+    font-size: 15px;
+    line-height: 19px;
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid #d4d4d4;
+    color: #7e7e7e;
+    margin-bottom: 25px;
+}
+div.hameleon-setting div.spec-comment.no-line{
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0;
+}
+div.hameleon-setting .edit-icon{
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    background: url(/bitrix/templates/concept_hameleon/images/setting/sprite-set.png) no-repeat;
+    display: inline-block;
+    margin-bottom: -7px;
+    cursor: pointer;
+}
+div.hameleon-setting .edit-icon:hover{
+    background-position: top right;
+}
+
+div.hameleon-setting div.inner div.hameleon-set-foot{
+    position: fixed;
+    will-change: transform;
+    bottom: 0;
+    width: 850px;
+    z-index: 10;
+    -webkit-transition: bottom .3s;
+    -o-transition: bottom .3s;
+    transition: bottom .3s;
+}
+div.hameleon-setting div.inner div.hameleon-set-foot.off{
+    bottom: -65px;
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table{
+    width: 100%;
+    height: 61px;
+    table-layout: fixed;
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table td{}
+div.hameleon-setting div.inner div.hameleon-set-foot table td.set-left{
+    background-color: #5cba86;
+    width: 280px;
+}
+div.hameleon-setting div.load, div.hameleon-setting button{
+    display: none;
+}
+div.hameleon-setting button.btn-submit-style{
+    width: auto;
+}
+
+div.hameleon-setting div.load.active, div.hameleon-setting button.active{
+    display: block;
+}
+div.hameleon-setting div.load.active{
+    margin: 10px 0 0;
+}
+div.hameleon-setting .xLoader.set-load .audio-wave span{
+    background: #ffffff;
+}
+div.hameleon-setting .xLoader.set-load .audio-wave span{
+    display: block;
+    bottom: 0;
+    width: 9px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    -webkit-animation: xLoaderAudioWaveK 1.5s infinite ease-in-out;
+    -moz-animation: xLoaderAudioWaveK 1.5s infinite ease-in-out;
+    -ms-animation: xLoaderAudioWaveK 1.5s infinite ease-in-out;
+    -o-animation: xLoaderAudioWaveK 1.5s infinite ease-in-out;
+    animation: xLoaderAudioWaveK 1.5s infinite ease-in-out
+}
+div.hameleon-setting .xLoader.set-load .audio-wave span:nth-child(2){
+    left: 11px;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -ms-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    animation-delay: .2s
+}
+div.hameleon-setting .xLoader.set-load .audio-wave span:nth-child(3){
+    left: 22px;
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -ms-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    animation-delay: .4s
+}
+div.hameleon-setting .xLoader.set-load .audio-wave span:nth-child(4){
+    left: 33px;
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -ms-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s
+}
+div.hameleon-setting .xLoader.set-load .audio-wave span:nth-child(5){
+    left: 44px;
+    -webkit-animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -ms-animation-delay: .8s;
+    -o-animation-delay: .8s;
+    animation-delay: .8s
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table td.set-left button{
+    font-size: 17px;
+    line-height: 17px;
+    background-color: #5cba86;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+    cursor: pointer;
+    padding-left: 40px;
+    background-position: 37px 20px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ic_point_color.png');
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table td.set-left button:hover{
+    background-color: #549873;
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table td.set-right{
+    text-align: right;
+    background-color: #595959;
+    width: 70%;
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table td.set-right div.hameleon-set-close{
+    font-size: 15px;
+    line-height: 15px;
+    color: #a4a4a4;
+    display: inline-block;
+    text-decoration: underline;
+    margin-right: 30px;
+    cursor: pointer;
+}
+div.hameleon-setting div.inner div.hameleon-set-foot table td.set-right div.hameleon-set-close:hover{
+    text-decoration: none;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content{
+    padding: 50px;
+    background: #fff;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list{
+    list-style: none;
+    padding: 0;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li{
+    padding: 15px 0;
+    position: relative;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.active{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: -18px;
+    top: 20px;
+    background: url('../images/setting/active.png') center no-repeat;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.list-name{
+    font-size: 19px;
+    line-height: 24px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.list-name a{
+    text-decoration: underline;
+    color: #2285c4;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.list-name a:hover{
+    text-decoration: none;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.icons-wrap{
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.icons-wrap a.icon:first-child{
+    margin-left: 0;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.icons-wrap a.icon{
+    width: 24px;
+    height: 24px;
+    background: url('../images/setting/copy-icon.png') no-repeat;
+    display: inline-block;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.icons-wrap div.inactive{
+    font-family: Arial;
+    background: #ff0000;
+    color: #fff;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 5px 10px 6px;
+    border-radius: 3px;
+    position: relative;
+    top: -2px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li .tooltip{
+    white-space: nowrap;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li a.icon.list-copy{
+    background: url('../images/setting/copy-icon.png') no-repeat;
+    background-position: top left;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li a.icon.list-copy:hover{
+    background-position: bottom left;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.icons-wrap span.al{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background: #333;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    white-space: normal;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li span.icons-wrap span.al.active{
+    display: block;
+}
+div.hameleon-setting div.inner div.domen{
+    font-size: 14px;
+    line-height: 16px;
+    color: #555555;
+    margin-top: 6px;
+    display: inline-block;
+    margin-left: 15px;
+    font-family: "Arial";
+}
+div.hameleon-setting div.inner div.domen div.arrow{
+    display: inline-block;
+    width: 32px;
+    height: 14px;
+    background: url('../images/domen_ar.png') center no-repeat;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land div.input{
+    margin-bottom: 5px;
+    position: relative;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land.disabled-input input{
+    color: #afafaf;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land .no-click-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land.disabled-input .no-click-area{
+    display: block;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land div.wrap-change{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: url('../images/setting/shadow-change.png') top right repeat-y;
+    width: 235px;
+    z-index: 15;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land div.wrap-change span.change{
+    font-size: 15px;
+    line-height: 17px;
+    color: #2b99df;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 10;
+    cursor: pointer;
+    border-bottom: 1px dashed #2b99df;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land div.wrap-change.off{
+    display: none;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land div.wrap-change span.change:hover{
+    border-bottom-color: transparent;
+}
+div.hameleon-setting.edit-sets div.inner div.edit_land span.backslash.off{
+    display: none;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content div.button-wrap a.edit{
+    color: #5e5e5e;
+    text-decoration: underline;
+    padding: 20px 0;
+    margin-left: 40px;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content div.button-wrap a.edit:hover{
+    text-decoration: none;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content div.button-wrap a.edit.instr{
+    padding-left: 35px;
+    background: url(../images/setting/help.png) left 15px no-repeat;
+}
+div.hameleon-setting div.button-wrap{
+    margin-top: 40px;
+}
+div.hameleon-setting div.button-wrap.off{
+    display: none;
+}
+div.hameleon-setting div.button-wrap a{
+    display: inline-block;
+    font-size: 19px;
+    line-height: 19px;
+}
+div.hameleon-setting div.button-wrap a.plus{
+    background-image: url(../images/setting/ic-button.png);
+    background-repeat: no-repeat;
+    background-position: 25px 18px;
+    padding: 20px 30px 20px 60px;
+    background-color: #2285c4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+div.hameleon-setting div.button-wrap a.plus:hover{
+    background-color: #2878b8;
+    color: #fff;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.button-wrap a.edit{
+    color: #5e5e5e;
+    text-decoration: underline;
+    padding: 20px 0;
+    margin-left: 40px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.button-wrap a.edit:hover{
+    text-decoration: none;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.more_edit{
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    display: none;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.more_edit.on{
+    display: block;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.more_edit div.load{
+    width: 270px;
+    height: 60px;
+    float: left;
+    margin: 0;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.more_edit div.load div.form-preload{
+    top: 30px !important;
+}
+button.btn-green:hover{
+    background-color: #549873;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.more_edit a.edit{
+    display: inline-block;
+    font-size: 19px;
+    line-height: 19px;
+    color: #5e5e5e;
+    text-decoration: underline;
+    padding: 20px 0;
+    margin-left: 20px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content div.more_edit a.edit:hover{
+    text-decoration: none;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set{
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    box-shadow: -85px 25px 41px 4px rgba(255, 255, 255, .95);
+    -webkit-box-shadow: -85px 20px 41px 4px rgba(255, 255, 255, .95);
+    -moz-box-shadow: -85px 20px 41px 4px rgba(255, 255, 255, .95);
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set.on{
+    display: block;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set{
+    height: 50px;
+    background-color: #fff;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td{}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.left_set{
+    background-color: #e1e1e1;
+    padding: 4px 8px 4px 20px;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.left_set span{
+    font-size: 13px;
+    line-height: 13px;
+    color: #474747;
+    margin-right: 10px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.left_set input{
+    font-size: 16px;
+    line-height: 16px;
+    color: #474747;
+    width: 55px;
+    height: 35px;
+    border: 0;
+    text-align: center;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set{
+    padding-left: 20px;
+    width: 207px;
+    position: relative;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set span.on{
+    display: none;
+    font-size: 13px;
+    line-height: 16px;
+    color: #50b921;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set span.off{
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7b7b7b;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set div.ignite.on span.on{
+    display: block;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set div.ignite.on span.off{
+    display: none;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set span.toggle-indicator{
+    display: inline-block;
+    width: 31px;
+    height: 15px;
+    background: url(../images/setting/switch.png) -47px -33px no-repeat;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    cursor: pointer;
+    transition: .4s;
+    -webkit-border-radius: 22px 22px 14px 14px;
+    -moz-border-radius: 22px 22px 14px 14px;
+    border-radius: 22px 22px 14px 14px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set div.ignite.on span.toggle-indicator{
+    background: url(../images/setting/switch.png) 0px -33px no-repeat;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set span.toggle-indicator span.toggle-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -10px;
+    background: url(../images/setting/switch.png) -27px 1px no-repeat;
+    transition: .4s;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set div.ignite.on span.toggle-indicator span.toggle-icon{
+    left: 17px;
+}
+div.hameleon-setting.addpage div.inner div.hameleon-set-content ul.list li div.more_set table.more_set td.right_set span.toggle-indicator span.toggle-icon-overlay{
+    width: 32px;
+    height: 15px;
+    display: inline-block;
+    background: scroll transparent url(../images/setting/switch.png) -23px -61px no-repeat;
+}
+div.hameleon-setting.newpage{
+    background-color: #e5e5e5;
+}
+div.hameleon-setting.newpage div.inner div.hameleon-set-content{
+    padding: 50px;
+}
+div.hameleon-setting.newpage div.inner div.hameleon-set-head table td.hameleon-set-name{
+    text-align: left;
+}
+div.hameleon-setting.newpage div.inner div.hameleon-set-content div.name{
+    font-size: 19px;
+    line-height: 22px;
+}
+div.hameleon-setting.newpage div.inner div.hameleon-set-content div.input{
+    height: 55px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answer{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/setting/ic-quest.png) center no-repeat;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    margin-bottom: -4px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answer:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input input{
+    font-size: 16px;
+    line-height: 16px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 0 10px;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+div.hameleon-setting form.form ul.form-radio{
+    padding: 0;
+    margin: 5px 0 15px;
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+div.hameleon-setting form.form ul.form-check{
+    padding: 0;
+    margin: 5px 0 20px;
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input input.focus-anim{
+    padding: 12px 10px 0;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input input.require{
+    border: 1px solid transparent;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input.has-error input{
+    border-color: #a94242;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.input.has-error span.desk{
+    color: #fff;
+}
+div.hameleon-setting div.inner div.hameleon-set-content input.require{
+    background: url(../images/star-req.png) calc(100% - 12px) 50% no-repeat;
+    background-size: 7px;
+    padding-right: 50px;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-right div.set-content div.more-option{
+    display: none;
+    position: relative;
+}
+div.hameleon-setting div.inner div.hameleon-set-content td.set-side-right div.set-content div.more-option.on{
+    display: block;
+}
+div.hameleon-setting form.form div.input span.desc{
+    top: 12px;
+    left: 11px;
+}
+div.hameleon-setting form.form div.input.in-focus span.desc{
+    top: 3px;
+}
+div.hameleon-sets-list-wrap.blur{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px);
+}
+div.hameleon-sets-list-wrap.on div.hameleon-sets-list{
+    display: block;
+    bottom: -100px;
+}
+div.hameleon-sets-list-wrap.on.view div.hameleon-sets-list{
+    bottom: 15px;
+}
+div.hameleon-sets-list-wrap.on div.hameleon-sets-list-left{
+    display: block;
+    left: -100px;
+}
+div.hameleon-sets-list-wrap.on.view div.hameleon-sets-list-left{
+    left: 0;
+    padding: 15px 15px 5px 15px;
+    background: #fff;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    z-index: 999;
+}
+/*hameleon-sets-list-left*/
+
+div.hameleon-sets-list-left{
+    position: fixed;
+    will-change: transform;
+    display: none;
+    top: 50%;
+    z-index: 99;
+    -webkit-transition: left .3s;
+    -o-transition: left .3s;
+    transition: left .3s;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item{
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4e9dd0;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item.edit-sets{
+    background-image: url('../images/setting/main-set-left.png');
+    background-color: #b28c59;
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item.addpage{
+    background-image: url('../images/setting/main-set-left1.png');
+    background-position: 12px center;
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item.modals{
+    background-image: url('../images/setting/main-set-left2.png');
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item.forms{
+    background-image: url('../images/setting/main-set-left3.png');
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item.iblist{
+    background-image: url('../images/setting/iblist_small.png');
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item>span.set-icon{
+    font-size: 15px;
+    line-height: 17px;
+    position: absolute;
+    top: 50%;
+    white-space: nowrap;
+    padding: 5px 14px 6px;
+    background-color: #959797;
+    color: #fff;
+    display: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    left: calc(100% + 10px);
+}
+div.hameleon-sets-list-left a.hameleon-sets-list-item:hover>span.set-icon{
+    display: block;
+    z-index: 99;
+}
+/**/
+
+div.hameleon-sets-list{
+    position: fixed;
+    will-change: transform;
+    display: none;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-transition: bottom .3s;
+    -o-transition: bottom .3s;
+    transition: bottom .3s;
+}
+div.hameleon-sets-list.blur{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px);
+}
+/*div.hameleon-sets-list.on{
+    display: block;
+    bottom: -100px;
+}
+div.hameleon-sets-list.on.view{
+    bottom: 40px;
+}*/
+
+div.hameleon-sets-list div.hameleon-sets-list-table{
+    display: table;
+    margin: 0 auto;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell{
+    display: table-cell;
+    padding: 0 30px;
+    position: relative;
+    vertical-align: middle;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell:first-child{
+    padding-right: 50px;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell:last-child{
+    padding-left: 50px;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell:nth-child(2){
+    padding-left: 50px;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell div.vertic-line{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: url('../images/setting/set-vertical-line.png') center no-repeat;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item{
+    display: block;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4e9dd0;
+    cursor: pointer;
+    position: relative;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item>span.set-icon{
+    font-size: 15px;
+    line-height: 17px;
+    position: absolute;
+    left: -999999px;
+    bottom: calc(100% + 10px);
+    white-space: nowrap;
+    padding: 5px 14px;
+    background-color: #959797;
+    color: #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: -1;
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-bottom: 0;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item:hover>span.set-icon{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 99;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.addpage{
+    background-image: url('../images/setting/addpage.png');
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.edit-sets{
+    background-image: url('../images/setting/editset.png');
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.addblock{
+    background-image: url('../images/setting/addblock.png');
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo{
+    /*background-image: url('../images/setting/seo.png');*/
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.seo-name{
+    position: absolute;
+    top: calc(50% + 1px);
+    left: calc(50% + 1px);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'LatoBold';
+    line-height: 19px;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo:before{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo.seo-bad:before{
+    background-image: url('../images/setting/seo-att.png');
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo.seo-bad{
+    background-color: #ff0000;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo.seo-notbad:before{
+    background-image: url('../images/setting/seo-att.png');
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo.seo-notbad{
+    background-color: #dbd41b;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo.seo-good:before{
+    background-image: url('../images/setting/seo-ok.png');
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item.seo span.status-seo.seo-good{
+    background-color: #83cc93;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell div.hameleon-sets-list-close{
+    width: 35px;
+    height: 35px;
+    background: url('../images/setting/close-set.png') center no-repeat;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell div.hameleon-sets-list-close+span{
+    position: absolute;
+    top: 21px;
+    left: 999999px;
+    font-size: 15px;
+    line-height: 17px;
+    background-color: #959797;
+    color: #fff;
+    padding: 5px 20px 5px 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    white-space: nowrap;
+}
+div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell div.hameleon-sets-list-close:hover+span{
+    left: calc(100% - 50px);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.mgo-widget-call_pulse{
+    position: relative;
+    z-index: 2;
+    height: 38px;
+    width: 38px;
+    background-color: #00cc78;
+    border-radius: 100%;
+    margin: auto 0;
+    opacity: 1;
+    /*    -webkit-animation: shake 2s infinite ease-in-out;
+    animation: shake 2s infinite ease-in-out;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;*/
+}
+.mgo-widget-call_pulse:after, .mgo-widget-call_pulse:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 0;
+    background-color: #00cc78;
+    border-radius: 100%;
+    -webkit-animation: hamPulse 15s linear infinite;
+    animation: hamPulse 15s linear infinite;
+    z-index: 1;
+    transform: scale(0);
+}
+.mgo-widget-call_pulse:before{
+    margin: auto 0 auto -32.5px;
+    height: 65px;
+    width: 65px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+.mgo-widget-call_pulse:after{
+    margin: auto 0 auto -46px;
+    height: 92px;
+    width: 92px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+}
+/*
+@-webkit-keyframes shake{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(-2px);
+  }
+  50%{
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(-2px);
+  }
+}
+
+@keyframes shake{
+  0%{
+     transform: translateX(0);
+  }
+  25%{
+     transform: translateX(-2px);
+  }
+  50%{
+     transform: translateX(0);
+  }
+  100%{
+     transform: translateX(-2px);
+  }
+}*/
+
+@-webkit-keyframes hamPulse{
+    0%{
+        transform: scale(0);
+    }
+    5%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@keyframes hamPulse{
+    0%{
+        transform: scale(0);
+    }
+    5%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+div.sets-shadow{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    will-change: transform;
+    z-index: 9999;
+}
+div.sets-shadow.on{
+    display: block;
+}
+div.hameleon-setting div.input div.wrap-i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    z-index: 5;
+}
+div.hameleon-setting div.input div.wrap-i i.concept-tiktok {
+    width: 20px;
+    height: 20px;
+    background: url(../images/svg/tiktok-gray.svg) center no-repeat;
+    background-size: 14px;
+}
+div.hameleon-setting div.input div.wrap-i i{
+    color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+div.hameleon-setting div.hameleon-set-top{
+    padding: 36px;
+    background-color: #fff;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap{
+    margin-bottom: 20px;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top{
+    padding-right: 160px;
+    position: relative;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.progress-name{
+    font-size: 20px;
+    line-height: 22px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 0 5px 35px;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.progress-name:before{
+    width: 25px;
+    height: 25px;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.progress-name.seo-bad:before{
+    background-image: url('../images/setting/seo-att.png');
+    background-color: #ff0000;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.progress-name.seo-notbad:before{
+    background-image: url('../images/setting/seo-att.png');
+    background-color: #dbd41b;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.progress-name.seo-good:before{
+    background-image: url('../images/setting/seo-ok.png');
+    background-color: #83cc93;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.points{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 17px;
+    color: #a3a3a3;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.seo-more_info{
+    font-size: 14px;
+    line-height: 16px;
+    color: #2b99df;
+    border-bottom: 1px dashed #2b99df;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.seo-more_info:hover{
+    border-bottom-color: transparent;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.seo-more_info span, div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.seo-more_info.on span.hide_info{
+    display: block;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.seo-more_info span.hide_info, div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-top div.seo-more_info.on span.show_info{
+    display: none;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-bar-hameleon{
+    margin-top: 20px;
+    height: 12px;
+    background: url(../images/setting/bg-perc.jpg) 0 0 repeat-x;
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    position: relative;
+    top: 1px;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-wrap div.progress-bar-hameleon div.progress-status{
+    height: 100%;
+    background-color: #2b99df;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info{
+    display: none;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul li{
+    font-size: 15px;
+    line-height: 17px;
+    padding: 4px 0 4px 30px;
+    position: relative;
+    display: block;
+    margin-top: 5px;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul li:first-child{
+    margin-top: 0;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul li:before{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul li.seo-bad:before{
+    background-image: url('../images/setting/seo-att.png');
+    background-color: #ff0000;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul li.seo-notbad:before{
+    background-image: url('../images/setting/seo-att.png');
+    background-color: #dbd41b;
+}
+div.hameleon-setting div.hameleon-set-top div.progress-info ul li.seo-good:before{
+    background-image: url('../images/setting/seo-ok.png');
+    background-color: #83cc93;
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answ-seo{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answ-seo:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answ-seo.seo-bad{
+    background-image: url('../images/setting/seo-att.png');
+    background-color: #ff0000;
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answ-seo.seo-notbad{
+    background-image: url('../images/setting/seo-att.png');
+    background-color: #dbd41b;
+}
+div.hameleon-setting div.inner div.hameleon-set-content span.answ-seo.seo-good{
+    background-image: url('../images/setting/seo-ok.png');
+    background-color: #83cc93;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea div.wrap-change{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: url(../images/setting/shadow-change.png) top right repeat-y;
+    width: 235px;
+    z-index: 15;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea div.wrap-change.off{
+    display: none;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea .disabled_texarea{
+    background-color: #fff;
+    color: #979797;
+    height: 100%;
+    padding: 10px;
+    word-wrap: break-word;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea div.wrap-change span.change{
+    font-size: 15px;
+    line-height: 17px;
+    color: #2b99df;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 10;
+    cursor: pointer;
+    border-bottom: 1px dashed #2b99df;
+}
+div.hameleon-setting div.inner div.hameleon-set-content div.textarea div.wrap-change span.change:hover{
+    border-bottom-color: transparent;
+}
+div.hameleon-setting div.seo-cancel{
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #9b9b9b;
+    padding: 4px 25px 3px 0;
+    background: url('../images/gray-close.png') right center no-repeat;
+    cursor: pointer;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+div.hameleon-setting div.seo-cancel:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.addrow-seo{
+    color: #aaa;
+}
+.addrow-seo span{
+    border-bottom: 1px dashed #aaa;
+    cursor: pointer;
+}
+.addrow-seo span:hover{
+    border-bottom-color: transparent;
+}
+div.hameleon-setting form.form ul.form-check.alone{
+    margin: 14px 0 0;
+}
+/**/
+
+div.hameleon-setting div.clearfile{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    margin-top: -12px;
+    background: url('../images/setting/crosss.png') center no-repeat;
+    width: 24px;
+    height: 24px;
+    z-index: 5;
+    cursor: pointer;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    display: none;
+}
+div.hameleon-setting div.clearfile.on{
+    display: block;
+}
+div.hameleon-setting div.clearfile:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+div.hameleon-setting .clearcolor{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    margin-top: -12px;
+    background: url(../images/setting/crosss.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+    z-index: 5;
+    cursor: pointer;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    display: none;
+}
+div.hameleon-setting .clearcolor.on{
+    display: block;
+}
+div.hameleon-setting .clearcolor:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+div.hameleon-setting form.form ul.form-check li label span:last-child{
+    position: relative;
+    top: 1px;
+}
+div.hameleon-setting form.form ul.form-check li label+span.answer{
+    position: relative;
+    top: -1px;
+}
+/**/
+
+div.hameleon-setting.list-style div.inner div.hameleon-set-content div.list-wrap{
+    margin-bottom: 40px;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content div.list-title{
+    font-size: 13px;
+    line-height: 19px;
+    color: #939393;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li{
+    position: relative;
+    padding: 15px 0 7px;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li:first-child{
+    margin-top: 0 !important;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li span.list-name{
+    font-size: 19px;
+    line-height: 24px;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li span.list-name a{
+    text-decoration: none;
+    color: #2285c4;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li span.list-name a:hover{
+    text-decoration: none;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li a.edit-list{
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/setting/sprite-set.png) no-repeat;
+    display: inline-block;
+    margin-bottom: -7px;
+    cursor: pointer;
+}
+div.hameleon-setting.list-style div.inner div.hameleon-set-content ul.list li a.edit-list:hover{
+    background-position: top right;
+}
+div.first-slider div.tool-settings a.tool-settings{
+    top: initial;
+    bottom: 15px;
+}
+div.block.hameleon-first div.tool-settings a.tool-settings.in-center{
+    top: auto;
+    bottom: 30px;
+}
+div.tool-settings a.tool-settings{
+    display: none;
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 24;
+    background: url('../images/set_sprite.png') top right no-repeat;
+}
+div.tool-settings a.tool-settings.in-center{
+    left: 50%;
+    margin-left: -20px;
+}
+div.block:hover div.tool-settings a.tool-settings.active, div.first-slider:hover div.tool-settings a.tool-settings.active, div.block:hover .change-colls.on{
+    display: block;
+}
+div.first-slider div.tool-settings a.tool-settings{
+    bottom: 20px;
+}
+div.faq-block div.faq div.faq-element div.tool-settings a.tool-settings{
+    top: 0;
+    left: 0;
+}
+.big-parent-colls{
+    position: relative;
+}
+.change-colls-info{
+    display: none;
+    position: absolute;
+    top: -50px;
+    z-index: 5;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    white-space: nowrap;
+    background-color: #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.change-colls-info.active{
+    display: block;
+}
+.change-colls{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(136, 137, 141, 0.6);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.change-colls.on{
+    display: block;
+}
+.change-colls:hover{
+    background-color: #2285c4;
+}
+.small .change-colls{
+    background-image: url('../images/setting/to_middle.png');
+}
+.middle .change-colls{
+    background-image: url('../images/setting/to_small.png');
+}
+
+
+@media (min-width: 1200px){
+    div.tool-settings a.tool-settings:hover{
+        background-position: top left;
+    }
+    div.hameleon-setting div.inner div.head-wrap a.setting-close:hover{
+        background-color: rgba(0, 0, 0, .1);
+    }
+    div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item{
+        opacity: .9;
+        filter: alpha(opacity=90);
+        transition: opacity .3s;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell a.hameleon-sets-list-item:hover{
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.15);
+    }
+    div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell div.hameleon-sets-list-close,
+    div.hameleon-main-setting div.hameleon-btn{
+        opacity: .7;
+        filter: alpha(opacity=70);
+        transition: opacity .3s;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -o-transition: opacity .3s;
+    }
+    div.hameleon-sets-list div.hameleon-sets-list-table div.hameleon-sets-list-cell div.hameleon-sets-list-close:hover,
+    div.hameleon-main-setting:hover div.hameleon-btn{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    div.hameleon-setting.edit-sets div.inner div.edit_land div.wrap-change{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+    }
+    div.hameleon-setting.edit-sets div.inner div.edit_land:hover div.wrap-change{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    div.hameleon-setting div.inner div.hameleon-set-content div.textarea div.wrap-change{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+    }
+    div.hameleon-setting div.inner div.hameleon-set-content div.textarea:hover div.wrap-change{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    /**/
+    div.hameleon-setting div.inner div.hameleon-set-head a.hameleon-set-close:hover{
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    div.hameleon-setting{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    div.hameleon-setting{
+        width: 100%;
+    }
+    div.hameleon-setting div.table-wrap div.cell-wrap{
+        display: block;
+        float: left;
+    }
+}
+@media (max-width: 767px){
+    div.hameleon-setting{
+        width: 100%;
+    }
+    div.hameleon-setting div.inner div.setting-content{
+        padding: 15px 23px 40px;
+    }
+    div.hameleon-setting div.inner div.setting-content a.return{
+        margin-bottom: 20px;
+    }
+    div.hameleon-setting div.inner div.setting-content div.title{
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+    }
+    div.hameleon-setting div.inner div.setting-content ul.list li{
+        margin-top: 25px;
+    }
+    div.hameleon-setting div.inner div.setting-content ul.list li span.icons-wrap{
+        margin-left: 0;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+    div.hameleon-setting div.inner div.setting-content ul.list li span.list-main{
+        margin: 5px 0 0;
+        display: block;
+    }
+    div.hameleon-setting div.table-wrap div.cell-wrap{
+        display: block;
+        float: left;
+    }
+    div.hameleon-setting div.inner div.foot-wrap{
+        display: block;
+        height: auto;
+    }
+    div.hameleon-setting div.inner div.foot-wrap div.foot-inner div.part-cell{
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+    div.hameleon-setting div.inner div.foot-wrap div.foot-inner div.part-cell.left{
+        padding: 15px;
+    }
+    div.hameleon-setting div.inner div.foot-wrap div.foot-inner div.part-cell.left a.instruct table td span.descript{
+        font-size: 13px;
+    }
+    div.hameleon-setting div.inner div.setting-content div.button-wrap{
+        margin-top: 35px;
+        text-align: center;
+    }
+    div.hameleon-setting div.inner div.setting-content div.content-body div.input-wrap div.input.to-left{
+        margin-left: 0;
+    }
+    div.hameleon-setting div.inner div.setting-content div.content-body div.input-wrap div.input.to-right{
+        margin-right: 0;
+    }
+    div.hameleon-setting div.inner div.foot-wrap div.foot-inner{
+        display: block;
+        padding: 15px;
+        margin: auto;
+    }
+    div.hameleon-setting div.inner div.foot-wrap div.foot-inner div.part-cell.left{
+        padding: 0;
+        text-align: center;
+    }
+    div.hameleon-setting div.inner div.foot-wrap div.foot-inner div.part-cell.right{
+        margin-top: 20px;
+    }
+    div.hameleon-setting div.inner div.setting-content div.table-name div.cell{
+        display: block;
+    }
+    div.hameleon-setting div.inner div.setting-content div.table-name div.cell.set{
+        width: 100%;
+    }
+}

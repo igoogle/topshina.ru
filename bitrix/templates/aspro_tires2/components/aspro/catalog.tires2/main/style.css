@@ -1,0 +1,5 @@
+body .stores_block_wrap.ext_block .filter{position:absolute;left:0px;top:3px;z-index:2;padding:0px;margin:0px;}
+body .stores_block_wrap.ext_block .quantity-wrapp-block{float: right;background: #fff;position: relative;}
+body .stores_block_wrap.ext_block .stores_block .quantity-wrapp-block .item-stock{position: static;float: none;display: inline-block;min-width:115px;}
+
+.loadings.vertical{background-image: url(../../../../images/loaders/pl3.gif) !important;min-height:80px;}

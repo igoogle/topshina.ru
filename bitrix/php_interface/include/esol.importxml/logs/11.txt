@@ -1,0 +1,4 @@
+2020-09-23 10:25:17: import complete
+Profile id = 11
+{'params':{'IMPORT_MODE':'CRON','total_read_line':'165','total_line':'165','correct_line':'165','error_line':'0','killed_line':'0','offer_killed_line':'0','element_added_line':'10','element_updated_line':'155','element_removed_line':'0','sku_added_line':'0','sku_updated_line':'0','section_added_line':'6','section_updated_line':'0','zero_stock_line':'0','offer_zero_stock_line':'0','old_removed_line':'0','offer_old_removed_line':'0','xmlCurrentRow':'8293','xmlSectionCurrentRow':'0','total_file_line':'8293','tmpdir':'/home/a/adminawd/topshina.adminawd.beget.tech/public_html/upload/tmp/esol.importxml/0/','curstep':'import','import_started':'1','count_rows':{'data/tires':'8293'},'xmlIbPropCurrentRow':'0','sectionIds':[],'propertyIds':[],'sectionsTmp':[]},'action':'finish','errors':[],'sessid':'684e38cfbee941c07d2d99d425308492'}
+

@@ -1,0 +1,7 @@
+.podbor{font-size:0px;}
+.podbor > div {font-size:14px;display:inline-block;float:none;vertical-align:middle;}
+#js_response_sc{margin-top: 20px;}
+#js_response_sc:not(.initied){min-height: 80px;position: relative;}
+#js_response_sc:not(.initied):before{content: "";position: absolute;top: 0px;left: -1px;right: 0px;bottom: 0px;background: #fffc url(images/loaders/pl3.gif) center center no-repeat;z-index: 2;}
+#js_response_sc .items.empty_item{min-height: 80px;vertical-align:middle;display:table;}
+#js_response_sc .items.empty_item .item{display:table-cell;vertical-align: middle;}

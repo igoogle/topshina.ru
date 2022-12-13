@@ -1,0 +1,10 @@
+<?
+$PERM["catalog_dop_text.php"]["2"]="D";
+$PERM["catalog_dop_text.php"]["6"]="D";
+$PERM["catalog_dop_text.php"]["3"]="D";
+$PERM["catalog_dop_text.php"]["4"]="D";
+$PERM["catalog_dop_text.php"]["9"]="D";
+$PERM["catalog_dop_text.php"]["7"]="D";
+$PERM["catalog_dop_text.php"]["5"]="D";
+$PERM["catalog_dop_text.php"]["8"]="D";
+?>

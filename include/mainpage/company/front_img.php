@@ -1,0 +1,1 @@
+<img class="img-responsive" alt="companypic.png" src="/images/company/topshina_company.png" title="companypic.png">

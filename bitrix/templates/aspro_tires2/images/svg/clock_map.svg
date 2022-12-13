@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+<defs>
+    <style>
+      .clock-cls-1 {
+        fill: #999;
+        fill-rule: evenodd;
+        filter: url(#clock-filter);
+      }
+    </style>
+    <filter id="clock-filter" x="0" y="0" width="14" height="14" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#999"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="clock-cls-1" d="M7,14a7,7,0,1,1,7-7A7,7,0,0,1,7,14ZM7,2a5,5,0,1,0,5,5A5,5,0,0,0,7,2ZM8.02,9.434L6.293,7.707A1.014,1.014,0,0,1,6,7H6V4.656a1,1,0,0,1,2,0v1.93L9.434,8.02A1,1,0,0,1,8.02,9.434Z"/>
+</svg>

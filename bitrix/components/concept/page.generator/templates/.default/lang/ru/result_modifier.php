@@ -1,0 +1,4 @@
+<?
+$MESS["PAGE_GEN_RESMOD_HAM_LAND_FROM"] = "от&nbsp;";
+$MESS["PAGE_GEN_RESMOD_HAM_LAND_REQUEST"] = "по запросу";
+?>

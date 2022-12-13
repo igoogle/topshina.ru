@@ -1,0 +1,13 @@
+.table_compare.tabs-body{position:relative;}
+.table_compare.tabs-body .filter_type_block{position: absolute;width: 230px;overflow: hidden;}
+.table_compare.tabs-body .filter_type_block > span{display:block;cursor:pointer;padding: 4px 24px 4px 10px;position:relative;margin: 0px 0px 3px 0px;}
+.table_compare.tabs-body .filter_type_block > span:before{content:"";position:absolute;display:block;left:0px;bottom:0px;top:100%;width:2px;transition:top 0.3s ease;}
+.table_compare.tabs-body .filter_type_block > span.active:before, .table_compare.tabs-body .filter_type_block > span:hover:before{top:0px;}
+.colored.active{color: #222;}
+body .bx_compare .compare_view .item_block a.in-cart{color:#fff;}
+.counter_wrapp .more_text{display:none;}
+.counter_wrapp .button_block.wide > .btn{width:100%;}
+
+@media(max-width: 500px){
+	.table_compare.tabs-body .filter_type_block{width:100px;}
+}

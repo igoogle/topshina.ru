@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+<defs>
+    <style>
+      .icls-1 {
+        fill: #999;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="icls-1" d="M983,687a8,8,0,1,1,8-8A8,8,0,0,1,983,687Zm0-14a6,6,0,1,0,6,6A6,6,0,0,0,983,673Zm0,10a1,1,0,0,1-1-1v-3a1,1,0,0,1,2,0v3A1,1,0,0,1,983,683Zm0-6a1,1,0,1,1,1-1A1,1,0,0,1,983,677Z" transform="translate(-975 -671)"/>
+</svg>

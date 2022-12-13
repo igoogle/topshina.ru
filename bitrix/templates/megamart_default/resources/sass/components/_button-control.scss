@@ -1,0 +1,58 @@
+.c-button-control {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+	text-decoration: none;
+	border: 1px solid #dee1e6;
+	transition: $transition-base;
+	position: relative;
+
+	&__icon {
+		font-size: 1.5rem;
+		color: $secondary;
+		position: relative;
+	}
+
+	&__title {
+		font-size: .88rem;
+	}
+
+	&__quantity {
+		position: absolute;
+		top: 0;
+		right: auto;
+		left: .75rem;
+		line-height: 1;
+		font-size: .75rem;
+		background: #ff5605;
+		padding: .25rem .44rem;
+		-webkit-border-radius: 1.25rem;
+		-moz-border-radius: 1.25rem;
+		border-radius: 1.5rem;
+		color: #fff;
+		border: .13rem solid theme-color('light');
+		font-size: .75rem;
+		min-width: 1.5rem;
+		text-align: center;
+		display: none;
+	}
+
+	&.has-items &__quantity {
+		display: block;
+	}
+
+	&.has-items &__icon {
+		color: $icon-300;
+	}
+
+	@include hover-focus {
+		text-decoration: none;
+		background: #dee1e6;
+	}
+
+	&.is-active {
+		background: #dee1e6;
+	}
+}

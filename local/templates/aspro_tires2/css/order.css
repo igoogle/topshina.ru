@@ -1,0 +1,224 @@
+#content #bx-soa-order-form #pickUpMap, #content #bx-soa-order-form #pickUpMap *, #content #bx-soa-order-form #propsMap, #content #bx-soa-order-form #propsMap * {
+  box-sizing: content-box;
+}
+
+#bx-soa-order.orderform--v1 .pandd{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;}
+#bx-soa-order.orderform--v1 .pandd>div{flex-grow:1;}
+#bx-soa-order.orderform--v1 #pickUpMap>ymaps{width:100%;}
+#bx-soa-order.orderform--v1 #bx-soa-pickup{width:100%;}
+#bx-soa-order.orderform--v1 .bx-soa-section .bx-soa-section-title-container{
+    cursor:default;
+    background-color:transparent;
+}
+#bx-soa-order.orderform--v1 #bx-soa-basket.bx-soa-section .bx-soa-section-title-container{margin:5px 0px 0px;}
+#bx-soa-order.orderform--v1 .bx-soa-section:not(#bx-soa-basket) .bx-soa-section-title-container{
+    border-bottom-color:transparent;
+    padding-bottom:3px;padding-top:37px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-section .bx-soa-section-content{border-top-color:transparent;padding-bottom:42px;}
+#bx-soa-order.orderform--v1 #bx-soa-coupon .bx-soa-section-content{padding-left:34px;}
+#bx-soa-order.orderform--v1 .bx-soa-section-content .bx-soa-coupon-label{display:block;}
+#bx-soa-order.orderform--v1 .bx-soa-section-content .bx-soa-coupon-label label{width:auto;}
+#bx-soa-order.orderform--v1 #bx-soa-region .bx_soa_location .form-group:not(.bx-soa-location-input-container):first-of-type:after{top:14px;}
+#bx-soa-order.orderform--v1 #bx-soa-delivery,#bx-soa-order.orderform--v1 #bx-soa-paysystem{
+    position:relative;
+    order:0;
+    max-width:100%;
+}
+#bx-soa-order.orderform--v1 #bx-soa-delivery+#bx-soa-paysystem{order:2;}
+#bx-soa-order.orderform--v1 #bx-soa-delivery+#bx-soa-paysystem+#bx-soa-pickup{order:1;}
+#bx-soa-order.orderform--v1 #bx-soa-paysystem+#bx-soa-delivery{order:1;}
+#bx-soa-order.orderform--v1 #bx-soa-paysystem+#bx-soa-delivery+#bx-soa-pickup{order:2;}
+#bx-soa-order.orderform--v1 #bx-soa-coupon{
+	display:none;
+	order:3;
+}
+#bx-soa-order.orderform--v1 #bx-soa-coupon .bx-soa-coupon{
+	border:none;
+	margin:0;
+	padding:0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-coupon-label{
+	margin:-1px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-coupon label{
+	color:#777;
+	margin-bottom:6px;
+	font-size:13px;
+	line-height:20px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-item-tr.bx-soa-item-info-container + .bx-soa-basket-info .bx-soa-item-td{
+	border:none;
+}
+#bx-soa-order.orderform--v1 .bx-soa .bx-soa-custom-label, #bx-soa-order.orderform--v1 .bx-soa .form-group label{
+	margin-bottom:6px;
+}
+#bx-soa-order.orderform--v1 div[class*="bx-sls"] .quick-locations{
+	margin-top:-3px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-company-graf-container{
+	height:21px;
+	width:21px;
+	border:none !important;
+	background:transparent;
+	padding:0;
+	margin:0;
+	display:inline-block;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-delivery-cost{
+	position:relative;
+	float:none;
+	bottom:inherit;
+	left:inherit;
+	right:inherit;
+	background:none;
+	border:none;
+	text-align:left;
+	padding:0;
+	display:block;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-delivery-cost .bx-soa-pp-list-description{
+	padding:5px 7px 5px 9px;
+	background:#f0f0f0;
+	border:none;
+	color:#333;
+	border-radius:2px;
+	display:inline-block;
+	line-height:10px;
+	vertical-align:top;
+	margin:0 0 0 0px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company-graf-container:before{
+	top:0;
+	left:0;
+	border:1px solid #eaeaea;
+	background:#fbfbfb;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container::after{
+	left:5px;
+	top:6px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company-smalltitle{
+	padding:0;
+	color:#333;
+	display:block;
+	word-wrap:break-word;
+	hyphens:auto;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company:not(:first-of-type){margin-top:15px;margin-bottom:21px;}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company{
+	position:relative;
+	padding:0 0 0 33px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-company-description{
+	color:#777;
+	font-size:13px;
+	max-width:100%;
+}
+#bx-soa-order.orderform--v1 #bx-soa-delivery .bx-soa-pp-company-description{
+	padding:0;
+	width:265px;
+	margin:8px 0 9px 0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pickup-list-item.bx-selected .bx-soa-pickup-l-item-btn .btn{
+	position:relative;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pickup-list-item.bx-selected .bx-soa-pickup-l-item-btn .btn:before{
+	content:"";
+	position:relative;
+	width:10px;
+	height:8px;
+	background:url(../images/order_ext.png) -64px -9px no-repeat;
+	z-index:2;
+	display:inline-block;
+	margin:0 10px 0 0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-item-tr.bx-soa-item-info-container+.bx-soa-basket-info .bx-soa-item-td{
+    border-top:none !important;
+}
+#bx-soa-order.orderform--v1 .bx-soa-section.bx-step-error .bx-soa-section-title::before{
+    background:none;
+    background:url(../images/order.png) -60px -30px no-repeat !important;
+}
+#bx-soa-order.orderform--v1 .bx-soa-coupon-input input.form-control{height:48px;}
+#bx-soa-order.orderform--v1 .bx-soa-coupon-input{
+	width:100%;margin:0px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-coupon-block{
+	display:block;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-delivery-period, #bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-delivery-cost{
+	font-size:13px;
+	word-wrap:break-word;
+	hyphens:auto;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-list-termin{
+	display:none;
+	margin:0 3px 0 0;
+	color:#777;
+	word-wrap:break-word;
+	hyphens:auto;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-delivery-period .bx-soa-pp-list-description{
+	display:inline;
+	color:#333;
+	word-wrap:break-word;
+	hyphens:auto;
+	border-radius:2px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container{
+	width:100%;
+	padding:0;
+	min-height:inherit;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-company{
+	border:none;
+	background:none;
+	padding:0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-desc{
+	display:none;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-company .bx-soa-pp-company-desc ~ div{
+	margin-top:8px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-company::before, #bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-company::after{
+	display:none;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .checkbox{
+	padding:0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-field label, #bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .checkbox label{
+	font-size:13px;
+	color:#777;
+	line-height:20px;
+	font-weight:normal;
+	display:inline-block;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container .bx-soa-pp-company-block>div:first-of-type{
+	margin-top:8px;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-inner-ps{
+	margin:5px 0 0 0;
+}
+#bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company--hasprice .bx-soa-pp-company-smalltitle, #bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company--hasperiod .bx-soa-pp-company-smalltitle, #bx-soa-order.orderform--v1 .bx-soa-pp-item-container .bx-soa-pp-company--hascalculate .bx-soa-pp-company-smalltitle{
+	margin-bottom:11px;
+}
+
+#bx-soa-order.orderform--v1 .bx-soa-reference{margin: 28px 0 0;padding: 20px 0px 0px;}
+
+
+@media (min-width: 768px){
+  #bx-soa-order.orderform--v1 #bx-soa-delivery,#bx-soa-order.orderform--v1 #bx-soa-paysystem{width:calc(50% - 15px);margin-right:15px;}
+	#bx-soa-order.orderform--v1 #bx-soa-delivery+#bx-soa-paysystem, #bx-soa-order.orderform--v1 #bx-soa-paysystem+#bx-soa-delivery{margin-right:0;margin-left:15px;}
+	#bx-soa-order.orderform--v1 #bx-soa-delivery .bx-soa-coupon,#bx-soa-order.orderform--v1 #bx-soa-paysystem .bx-soa-coupon{display:none;}
+	#bx-soa-order.orderform--v1 #bx-soa-coupon{display:block;}
+	#bx-soa-order.orderform--v1 #bx-soa-pickup{order:2;}
+	#bx-soa-order.orderform--v1 #bx-soa-delivery+#bx-soa-paysystem{order:1;}
+}
+@media (max-width: 767px){
+	#bx-soa-order.orderform--v1 .bx-soa-pp-desc-container{display: none;}
+}

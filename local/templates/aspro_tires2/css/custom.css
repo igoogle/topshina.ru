@@ -1,0 +1,47 @@
+/*NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him.*/
+
+/* Examples (uncomment to use):*/
+
+/* Set site background image */
+/* body {  background: url(image_source) top no-repeat; } */
+
+.top_slider_wrapp .flexslider {
+   height: auto;
+}
+
+.top_slider_wrapp .flexslider .slides > li {
+   height: 380px !important;
+}
+
+.top_slider_wrapp .flexslider .slides > li  {
+   background-size: contain !important;
+   background-position: center bottom !important;
+}
+
+@media (max-width: 1024px) {
+   .top_slider_wrapp .flexslider .slides > li  {
+      height: 250px !important;
+   }
+}
+
+@media (max-width: 768px) {
+   .top_slider_wrapp .flexslider .slides > li  {
+      height: 180px !important;
+   }
+}
+
+@media (max-width: 425px) {
+   .top_slider_wrapp .flexslider .slides > li {
+      height: 120px !important;
+   }
+}
+
+@media (max-width: 375px) {
+   .top_slider_wrapp .flexslider .slides > li {
+      height: 90px !important;
+   }
+
+   html, body {
+      overflow-x: hidden;
+   }
+}

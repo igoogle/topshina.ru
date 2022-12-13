@@ -1,0 +1,4 @@
+.order-block.reviews{margin:0px 0px 0px;background:none;border:none;}
+.order-block.reviews td{padding: 0px 0px 40px;}
+.order-block.reviews td .text{padding:0px;}
+.order-block.reviews td .text:before{display:none;}

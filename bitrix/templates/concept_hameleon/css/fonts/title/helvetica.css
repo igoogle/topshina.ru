@@ -1,0 +1,10 @@
+.main1, h1, h2, h3, h4, h5, h6{
+    font-family: 'HelveticaLight', 'PT Sans Caption';
+}
+.main2{
+    font-family: 'HelveticaRegular', 'PT Sans Caption';
+}
+div.advantages div.advantages-table div.advantages-cell.text-part div.name.main1{
+	font-family: 'HelveticaBold', 'PT Sans Caption';
+    font-size: 19px;
+}

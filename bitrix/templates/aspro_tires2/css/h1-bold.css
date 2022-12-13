@@ -1,0 +1,12 @@
+.title-v1 .reviews.item-views.slider .item .title,
+.reviews.item-views.front .item .title,
+.section_block_wrapper .items-title,
+.item_types_block .title,
+.item_types_block .block_wrapper .items .item,
+div.item-title,
+.module_products_list td.item-name-cell a,
+.bx_compare .compare_view .item_block a,
+.title-block-middle,
+.module-cart .name-cell a,
+.module-cart .name-cell,
+body .container .shops.list .item .title{font-weight:bold;}

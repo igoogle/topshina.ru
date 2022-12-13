@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edf0f3;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #9ea3ab;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        opacity: 0.44;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="300" height="200"/>
+  <path class="cls-2" d="M106.336,75.253l14.929,14.893,13.058-4.654,4.665-13.027L124.059,57.573a28.094,28.094,0,0,1,35.788,34.982,13.274,13.274,0,0,1,1.174,1.036l30.66,30.586A13.123,13.123,0,0,1,173.1,142.711l-30.66-30.586a13.242,13.242,0,0,1-1.038-1.17A28.092,28.092,0,0,1,106.336,75.253Z"/>
+  <circle data-name="Tool" class="cls-3" cx="182.453" cy="133.563" r="4.109"/>
+</svg>
